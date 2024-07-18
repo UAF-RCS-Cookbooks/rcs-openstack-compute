@@ -1,4 +1,4 @@
-OpenStack Chef Cookbook - compute
+RCS Forked version of OpenStack Chef Cookbook - compute
 =================================
 
 .. image:: https://governance.openstack.org/badges/cookbook-openstack-compute.svg
