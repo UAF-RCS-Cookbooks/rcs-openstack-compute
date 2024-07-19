@@ -216,7 +216,7 @@ nova_conf_options = merge_config_options 'compute'
 
 template '/etc/nova/nova.conf' do
   source 'openstack-service.conf.erb'
-  cookbook 'openstack-common'
+  cookbook 'rcs-openstack-common'
   owner node['openstack']['compute']['user']
   group node['openstack']['compute']['group']
   mode '640'
