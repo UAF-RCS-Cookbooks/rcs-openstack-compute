@@ -21,8 +21,8 @@ class ::Chef::Recipe
   include ::Openstack
 end
 
-include_recipe 'openstack-compute::nova-common'
-include_recipe 'openstack-compute::_nova_cell'
+include_recipe 'rcs-openstack-compute::nova-common'
+include_recipe 'rcs-openstack-compute::_nova_cell'
 
 nova_user = node['openstack']['compute']['user']
 nova_group = node['openstack']['compute']['group']

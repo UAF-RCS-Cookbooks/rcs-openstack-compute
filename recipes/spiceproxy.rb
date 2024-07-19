@@ -20,7 +20,7 @@
 # limitations under the License.
 #
 
-include_recipe 'openstack-compute::nova-common'
+include_recipe 'rcs-openstack-compute::nova-common'
 
 platform_options = node['openstack']['compute']['platform']
 

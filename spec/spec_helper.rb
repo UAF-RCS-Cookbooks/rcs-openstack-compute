@@ -151,19 +151,19 @@ end
 
 shared_examples 'expect_runs_nova_apache_recipe' do
   it 'includes _nova_apache' do
-    expect(chef_run).to include_recipe 'openstack-compute::_nova_apache'
+    expect(chef_run).to include_recipe 'rcs-openstack-compute::_nova_apache'
   end
 end
 
 shared_examples 'expect_runs_nova_common_recipe' do
   it 'includes nova-common' do
-    expect(chef_run).to include_recipe 'openstack-compute::nova-common'
+    expect(chef_run).to include_recipe 'rcs-openstack-compute::nova-common'
   end
 end
 
 shared_examples 'expect_runs_nova_cell_recipe' do
   it 'includes _nova_cell' do
-    expect(chef_run).to include_recipe 'openstack-compute::_nova_cell'
+    expect(chef_run).to include_recipe 'rcs-openstack-compute::_nova_cell'
   end
 end
 

@@ -17,11 +17,11 @@ describe 'openstack-compute::compute' do
     end
 
     it 'does not include the api-metadata recipe' do
-      expect(chef_run).not_to include_recipe 'openstack-compute::api-metadata'
+      expect(chef_run).not_to include_recipe 'rcs-openstack-compute::api-metadata'
     end
 
     it 'does not include api-metadata recipe' do
-      expect(chef_run).not_to include_recipe 'openstack-compute::api-metadata'
+      expect(chef_run).not_to include_recipe 'rcs-openstack-compute::api-metadata'
     end
 
     it do
@@ -75,7 +75,7 @@ describe 'openstack-compute::compute' do
     end
 
     it 'runs libvirt recipe' do
-      expect(chef_run).to include_recipe 'openstack-compute::libvirt'
+      expect(chef_run).to include_recipe 'rcs-openstack-compute::libvirt'
     end
 
     it 'starts nova compute on boot' do

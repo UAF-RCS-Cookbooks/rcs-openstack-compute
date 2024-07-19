@@ -3,7 +3,7 @@ maintainer       'UAF RCS'
 maintainer_email 'chef@rcs.alaska.edu'
 license          'Apache-2.0'
 description      'The OpenStack Compute service Nova.'
-version          '20.0.3'
+version          '20.0.4'
 
 chef_version '>= 16.0'
 

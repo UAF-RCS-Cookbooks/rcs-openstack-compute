@@ -24,7 +24,7 @@ class ::Chef::Recipe
   include Apache2::Cookbook::Helpers
 end
 
-include_recipe 'openstack-compute::_nova_apache'
+include_recipe 'rcs-openstack-compute::_nova_apache'
 
 platform_options = node['openstack']['compute']['platform']
 
@@ -105,4 +105,4 @@ apache2_site 'nova-api' do
   notifies :restart, 'service[apache2]', :immediately
 end
 
-include_recipe 'openstack-compute::_nova_cell'
+include_recipe 'rcs-openstack-compute::_nova_cell'

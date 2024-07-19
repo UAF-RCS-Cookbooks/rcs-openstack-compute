@@ -23,7 +23,7 @@ class ::Chef::Recipe
   include ::Openstack
 end
 
-include_recipe 'openstack-compute::nova-common'
+include_recipe 'rcs-openstack-compute::nova-common'
 platform_options = node['openstack']['compute']['platform']
 
 package platform_options['compute_compute_packages'] do
@@ -58,7 +58,7 @@ directory node['openstack']['compute']['conf']['DEFAULT']['instances_path'] do
   recursive true
 end
 
-include_recipe 'openstack-compute::libvirt'
+include_recipe 'rcs-openstack-compute::libvirt'
 
 service 'nova-compute' do
   service_name platform_options['compute_compute_service']

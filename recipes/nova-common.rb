@@ -24,7 +24,7 @@ class ::Chef::Recipe
   include ::Openstack
 end
 
-include_recipe 'openstack-common::logging' if node['openstack']['compute']['syslog']['use']
+include_recipe 'rcs-openstack-common::logging' if node['openstack']['compute']['syslog']['use']
 
 platform_options = node['openstack']['compute']['platform']
 

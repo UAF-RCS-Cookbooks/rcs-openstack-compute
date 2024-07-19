@@ -17,7 +17,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include_recipe 'openstack-compute::nova-common'
+include_recipe 'rcs-openstack-compute::nova-common'
 
 # service['apache2'] is defined in the apache2_default_install resource
 # but other resources are currently unable to reference it.  To work
