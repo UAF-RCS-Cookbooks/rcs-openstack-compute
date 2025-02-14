@@ -82,7 +82,7 @@ placement_conf_options = merge_config_options 'placement'
 
 template '/etc/placement/placement.conf' do
   source 'openstack-service.conf.erb'
-  cookbook 'openstack-common'
+  cookbook 'rcs-openstack-common'
   owner node['openstack']['placement']['user']
   group node['openstack']['placement']['group']
   mode '640'
