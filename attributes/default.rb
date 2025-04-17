@@ -87,7 +87,7 @@ when 'rhel' # :pragma-foodcritic: ~FC024 - won't fix this
         %w(libvirt device-mapper python-libguestfs)
       end,
     'libvirt_service' => 'libvirtd',
-    'dbus_service' => 'messagebus',
+    'dbus_service' => 'dbus-broker',
     'compute_cert_packages' => ['openstack-nova-cert'],
     'compute_cert_service' => 'openstack-nova-cert',
     'mysql_service' => 'mysqld',
