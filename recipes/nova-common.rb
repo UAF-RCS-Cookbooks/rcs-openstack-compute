@@ -177,8 +177,8 @@ node.default['openstack']['compute']['conf'].tap do |conf|
   conf['placement']['auth_url'] = auth_url
 
   # [glance] section
-  conf['glance']['api_servers'] =
-    "#{image_endpoint.scheme}://#{image_endpoint.host}:#{image_endpoint.port}"
+  # conf['glance']['api_servers'] =
+  #   "#{image_endpoint.scheme}://#{image_endpoint.host}:#{image_endpoint.port}"
 
   # [neutron] section
   conf['neutron']['auth_url'] = identity_endpoint.to_s
